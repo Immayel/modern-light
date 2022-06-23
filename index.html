@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name=" viewport " content="width=devoce-width, initial-scale=1.0">
+        <title>Modern lighting </title>
+        <link rel="stylesheet"  href="style.css">
+    </head>
+    <body>
+        <div class="hero">
+            <nav>
+                <img src="menu.png" class="menu-img">
+                <img src="logo.png" class="logo">
+                <ul>
+                    <li> <a herf=""> Latest</a> </li>
+                    <li> <a herf=""> Modern</a> </li>
+                    <li> <a herf="">Contemporary</a> </li>
+                    <li> <a herf=""> Affordable</a> </li>
+                </ul>
+                <button type="button" onclick="toggleBtn()" id="btn"> <span></span> </button>
+            </nav>
+            <div class="lamp-container">
+                <img src="lamp.png" class="lamp">
+                <img src="light.png" class="light" id="light">
+            </div>
+            <div class="text-cotainer">
+                <h1>Latest<br> in lighting </h1>
+                <p> This is the first lamp from our company. we're making a hug collection of modern lamp in all categories from home use to office use.</p>
+            <a href="">check all collections</a>
+            <div class="control">
+                <p>04</p>
+                <div class="line"><span></span></div>
+                <p>05</p>
+            </div>
+            </div>
+        </div>
+        <script>
+            var btn = document.getElementById("btn");
+            var light= document.getElementById("light");
+            function toggleBtn(){
+                btn.classList.toggle("active");
+light.classList.toggle("on");
+            }
+        </script>
+    </body>
+</html>
